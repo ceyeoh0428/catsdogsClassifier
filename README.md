@@ -1,5 +1,8 @@
 # catsdogsClassifier
 
+Dataset from Kaggle: [Cat and Dog](https://www.kaggle.com/tongpython/cat-and-dog)
+
+
 1. Model: **cnn_classifier.zip**
 
    Use simple CNN to train the model
