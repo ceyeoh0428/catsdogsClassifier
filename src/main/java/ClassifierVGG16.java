@@ -95,14 +95,14 @@ public class ClassifierVGG16 {
         for (int i = 0; i < nEpochs; i++) {
             trainIter.reset();
             System.out.println("Epoch " + i);
-            vgg16Transfer.fit(trainIter); //model.fit
+            vgg16Transfer.fit(trainIter);
             System.out.println("Done an epoch, validating");
             Evaluation evaluation = vgg16Transfer.evaluate(valIter);
             System.out.println(evaluation.stats());
         }
 
         log.info("***** SAVED MODEL *****");
-        File loc = new File("vgg16_classifier.zip");
+        File loc = new File("model/vgg16_classifier.zip");
         boolean saveUpdater = true;
         ModelSerializer.writeModel(vgg16Transfer, loc, saveUpdater);
 

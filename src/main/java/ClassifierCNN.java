@@ -120,7 +120,7 @@ public class ClassifierCNN {
         }
 
         log.info("***** SAVED MODEL *****");
-        File loc = new File("cnn_classifier.zip");
+        File loc = new File("model/cnn_classifier.zip");
         boolean saveUpdater = true;
         ModelSerializer.writeModel(model, loc, saveUpdater);
 
